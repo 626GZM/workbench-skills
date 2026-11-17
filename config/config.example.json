@@ -1,0 +1,61 @@
+{
+  "workspace_root": "~/workbench",
+  "repos_root": "~/repos",
+  "projects": [
+    {
+      "name": "project-a",
+      "path": "~/repos/project-a",
+      "branches": {
+        "base": "main",
+        "dev": "feature",
+        "test": "test"
+      },
+      "services": []
+    }
+  ],
+  "branches": {
+    "base": "main",
+    "dev": "dev",
+    "test": "test"
+  },
+  "models": {
+    "kimi": {
+      "cli": "claude",
+      "model": "",
+      "key_env": "KIMI_API_KEY",
+      "usage_url": "https://api.kimi.com/coding/v1/usages"
+    },
+    "deepseek": {
+      "cli": "claude",
+      "model": "",
+      "key_env": "DEEPSEEK_API_KEY",
+      "balance_url": "https://api.deepseek.com/user/balance",
+      "min_balance": 0.5
+    },
+    "codex": {
+      "cli": "codex",
+      "model": "",
+      "key_env": "OPENAI_API_KEY"
+    }
+  },
+  "java": {
+    "package_prefix": "com.example",
+    "jar_roots": [],
+    "synonyms": ""
+  },
+  "docs": {
+    "prd": "01-需求理解.md",
+    "design": "02-方案设计.md",
+    "review": "03-代码review.md"
+  },
+  "e2e": {
+    "root": "~/e2e",
+    "envs": ["local", "dev"]
+  },
+  "index": {
+    "db_path": "~/.local/state/workbench-skills/fileindex.db"
+  },
+  "output": {
+    "dir": ".wbkit-out"
+  }
+}
