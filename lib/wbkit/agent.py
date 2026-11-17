@@ -125,6 +125,9 @@ def command(engine, prompt, cwd, model=None, profile='read', dirs=(), resume=Non
             argv += ['--add-dir', str(d)]
         if model:
             argv += ['-m', model]
+        if prompt:
+            # codex 从 argv 取提示词（stdin 不读），顺序在 resume id 之后
+            argv.append(prompt)
         return argv, env
 
     allow = prof['allow']

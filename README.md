@@ -26,6 +26,7 @@
 | [git-worktree-flow](skills/git-worktree-flow/) | 同一仓库多分支并行开发：建/列/删 worktree、清理失效记录、合基线 |
 | [multi-model-code-review](skills/multi-model-code-review/) | 审 git 改动，可单模型或多模型并跑后合并去重、标注一致性 |
 | [multi-agent-run](skills/multi-agent-run/) | 无头调用 Claude Code / Codex / DeepSeek / Kimi 跑一次任务并取回结果 |
+| [test-fix-loop](skills/test-fix-loop/) | 跑测试、读失败、让模型改、再跑，反复到通过；只修这次失败 |
 | [java-code-index](skills/java-code-index/) | Java 代码地图：接口在哪、谁调用我、改这里影响谁 |
 | [java-layer-review](skills/java-layer-review/) | 扫新增 Java 代码里的重复防御、分层越界、常见坏味道，规则可开关 |
 | [todo-scanner](skills/todo-scanner/) | 扫 TODO/FIXME/HACK、调试残留、空 catch、注释掉的代码，按人和严重程度汇总 |
